@@ -4,6 +4,7 @@ metadata:
   name: scheduling
   labels:
     app: scheduling
+  namespace: oss
 spec:
   replicas: 1
   selector:

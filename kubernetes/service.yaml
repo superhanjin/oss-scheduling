@@ -4,6 +4,7 @@ metadata:
   name: scheduling
   labels:
     app: scheduling
+  namespace: oss
 spec:
   ports:
     - port: 8080
