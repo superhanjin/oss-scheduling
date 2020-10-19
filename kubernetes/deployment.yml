@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: scheduling
+  name: oss-scheduling
   labels:
-    app: scheduling
+    app: oss-scheduling
   namespace: oss
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: scheduling
+      app: oss-scheduling
   template:
     metadata:
       labels:
-        app: scheduling
+        app: oss-scheduling
     spec:
       containers:
-        - name: scheduling
+        - name: oss-scheduling
           image: 496278789073.dkr.ecr.ap-northeast-2.amazonaws.com/oss-scheduling:v1
           ports:
             - containerPort: 8080
